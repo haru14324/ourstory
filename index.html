@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Our Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Caveat:wght@500;700&family=Inter:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lock">
+
+  <div id="gate">
+    <div id="gform">
+      <svg class="beat" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 5 6.2 5c2 0 3.7 1.1 4.6 2.7h.4C12.1 6.1 13.8 5 15.8 5c3.3 0 5.3 3.4 3.8 6.8C19.5 16.4 12 21 12 21z" />
+      </svg>
+      <h1 id="gHi">Hi</h1>
+      <p class="gq">Before we begin, what day did you say yes?</p>
+      <div class="date" role="group" aria-label="Date">
+        <input id="gm" inputmode="numeric" maxlength="2" placeholder="MM" aria-label="Month" autocomplete="off">
+        <span>/</span>
+        <input id="gd" inputmode="numeric" maxlength="2" placeholder="DD" aria-label="Day" autocomplete="off">
+        <span>/</span>
+        <input id="gy" inputmode="numeric" maxlength="4" placeholder="YYYY" aria-label="Year" autocomplete="off">
+      </div>
+      <p id="gmsg" role="status"></p>
+      <button id="open">Unlock our story</button>
+    </div>
+  </div>
+
+  <div id="bar"></div>
+  <button id="music" aria-label="Toggle music">♪</button>
+
+  <main>
+    <section class="hero">
+      <h1><span id="heroA">Our</span> <em>story</em></h1>
+      <p class="sub" id="heroSub">Two years of you and me, one moment at a time.</p>
+      <div class="count" id="count" aria-live="off">
+        <div><b id="cd">0</b><span>days</span></div>
+        <div><b id="ch">0</b><span>hours</span></div>
+        <div><b id="cm">0</b><span>minutes</span></div>
+        <div><b id="cs">0</b><span>seconds</span></div>
+      </div>
+      <p class="cue">Keep scrolling. It begins with a yes.</p>
+    </section>
+
+    <h2 class="ch">The day you said yes</h2>
+    <section class="yes" id="yesSec"></section>
+
+    <h2 class="ch">And then, every month</h2>
+    <section class="tl" id="tl">
+      <div class="fill"></div>
+    </section>
+
+    <section class="fin">
+      <div class="letter" id="letter" aria-label="Love letter"></div>
+      <h2>Will you spend year 3 with me?</h2>
+      <div class="btns" id="btns">
+        <button id="yes">Yes, always</button>
+        <button id="no">No</button>
+      </div>
+      <p id="done"></p>
+    </section>
+  </main>
+  <canvas id="fx"></canvas>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
